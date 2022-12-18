@@ -25,10 +25,6 @@
                     <a class="nav-link active" href="getWarehouses">Warehouse</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search warehouse" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
@@ -45,7 +41,6 @@
             <p th:text="${warehouse.id} + '. ' + ${warehouse.name} + ' - ' + ${warehouse.age} + ' years old'"></p>
             <a button type="button" class="btn btn-primary" th:href="@{/edit-warehouse/{id}(id = ${warehouse.id}) }"> Edit </a>
             <a button type="button" class="btn btn-danger" th:href="@{/delete-warehouse-page/{id}(id = ${warehouse.id}) }"> Delete </a>
-            <a button type="button" class="btn btn-info" th:href="@{/see-warehouse-products-page/{id}(id = ${warehouse.id}) }"> See products </a>
 
         </li>
 
